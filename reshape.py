@@ -18,7 +18,7 @@ jig = jig.rename({'comment_text':'text'}, axis=1)
 jig = jig.rename({'toxkaggle':'original_label'}, axis=1)
 
 # read new annotation files
-hits1 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensive1.csv"")
+hits1 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensive1.csv")
 hits2 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensive2.csv")
 hits3 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensice3.csv")
 
