@@ -7,7 +7,7 @@ davidson = pd.read_csv("https://raw.githubusercontent.com/t-davidson/"
                        "hate-speech-and-offensive-language/master/data/labeled_data.csv")
 trac = pd.read_csv("https://raw.githubusercontent.com/kmi-linguistics/trac-1/master/english/agr_en_train.csv", header=None)
 
-jig = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/toxkaggle.csv")
+jig = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/main/data/toxkaggle.csv")
 
 # rename some columns and drop some to facilitate restructuring and merging with new annots
 davidson = davidson.rename({'tweet':'text'}, axis=1)
@@ -18,9 +18,9 @@ jig = jig.rename({'comment_text':'text'}, axis=1)
 jig = jig.rename({'toxkaggle':'original_label'}, axis=1)
 
 # read new annotation files
-hits1 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensive1.csv")
-hits2 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensive2.csv")
-hits3 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/data/offensice3.csv")
+hits1 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/main/data/offensive1.csv.zip")
+hits2 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/main/data/offensive2.csv.zip")
+hits3 = pd.read_csv("https://raw.githubusercontent.com/katkorre/tox-reannotation/main/data/offensive3.csv.zip")
 
 
 # reformat data
