@@ -64,6 +64,7 @@ davidson.loc[davidson['class'] == 0, 'hate_speech'] = 1
 davidson.loc[davidson['class'] == 1, 'offensive'] = 1
 davidson = davidson.drop(['class'], axis=1)
 
+# merge original and new annotations
 data_d = data.merge(davidson, how='left', on='text')
 data_dj = data.merge(jig, how='left', on='text')
 df = data.merge(trac, how='left', on='text')
